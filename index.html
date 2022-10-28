@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design 3</title>
+    <style>
+        body {
+            color: white;
+            font-family: Garamond, serif;
+
+        }
+
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: 1;
+            background-color:  #e70000;
+        }
+        .item2{
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row: 2;
+            background-color: #571212;
+        }
+        .item3{
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row: 2;
+            background-color: #571212;
+        }
+        .item4{
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row: 2;
+            background-color: #571212;
+        }
+
+         .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 98%;
+            column-gap: 3px;
+            height: 690px;
+            margin: 15px;
+            background-color: #e70000;
+        }
+        .content {
+            margin: 50px;
+            font-size: 15px;
+            text-align: left;
+        
+        }
+
+        .header-content {
+            padding-left: 90px;
+            padding-top: 25px;
+            font-size: 18px;
+        }
+        #bigger-text {
+            font-size: 46px;
+        }
+        div > p {
+          font-stretch:extra-expanded;
+          color: aliceblue;
+        }
+        img {
+            position: absolute;
+            top: 42px;
+            left: 950px;
+            width: 200px;
+    
+        }
+
+        .content p {
+            color: #f5a5a5;
+        }
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header-content">
+        <h1 id="bigger-text">Down with the state</h1>
+        <p>
+        Abandon the left vs. right paradigm and adopt new ideals, where 
+        consistency and logic reign supreme.
+        <img src="img/img1.png" alt="" >
+        </p>
+        </div>
+        <div class="item2">
+            <div class="content">
+            <h2>But what about the roads?</h2>
+            <p>You just don't understand economics, like supply and demand. Don't worry kiddo, where there's a demand there will be a supply, we'll all have our roads.</p>
+            </div>
+        </div>
+        <div class="item3">
+            <div class="content">
+            <h2>Is taxation theft?</h2>
+            <p> if i came to your house with some heavily armed buddies, demanded that you and your neighbors give me a percentage of your income, in return for some crappy monopolized services that you didn't ask for, would you consider that theft?</p>
+            </div>
+        </div>
+        <div class="item4">
+            <div class="content">
+            <h2>So, what you're saying is...?</h2>
+            <p>Libertarians want to live in a world where gay couples can protect their poppy fields with fully automatic weapons. <br> <br> A world where voluntaryism and property rights are treated with the highest respect.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
